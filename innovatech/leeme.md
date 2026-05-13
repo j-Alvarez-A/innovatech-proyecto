@@ -104,11 +104,3 @@ Cada servicio tiene su propio `.env`. Cambia los valores para producción:
 - **Repository Pattern**: toda la lógica de BD encapsulada en `repository.js`
 
 ---
-
-## Próximos pasos sugeridos
-
-1. Agregar refresh tokens (JWT con expiración corta + refresh token)
-2. Agregar validación de body con `zod` o `joi`
-3. Implementar logs centralizados con `winston`
-4. Añadir tests unitarios con `jest` + mocks de Prisma
-5. Proteger rutas por rol (ADMIN puede todo, COLABORADOR solo lectura)
