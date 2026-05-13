@@ -69,12 +69,12 @@ services:
     depends_on:
       - db-analitica
 
-  # ─── API Gateway ──────────────────────────────────────────
+  # ─── API Gateway  problemas con el puerto 3000 cuando se dockeriza" ──────────────────────────────────────────
   api-gateway:
     build: ./services/api-gateway
     container_name: api-gateway
     ports:
-      - "3000:3000"
+      - "3000:3000"  
     env_file:
       - ./services/api-gateway/.env
     depends_on:
